@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    height: 210px;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  margin-bottom: 0;
+.kasa-logo-white{
+    margin:30px auto 10px auto; 
+}
+    .footer_text{
+        color:white;
+        font-size: 16px;
+        margin:30px auto 20px auto;
+    }
+}

@@ -1,11 +1,12 @@
 
-import slide from '../../assets/slide1.jpg'
 
-function Banner() {
+import './banner.scss'
+
+function Banner({image, text}) {
     return (
         <div className='banner'>
-        <img src={slide} alt='banner' className='img-banner' />
-    <h1>Chez vous, partout et ailleurs</h1>
+        <img src={image} alt='banner_img' className='banner_img' />
+    <h1 className='banner_text'>{text}</h1>
     </div>
     );
 }
