@@ -1,5 +1,3 @@
-
-
 import './banner.scss'
 
 function Banner({image, text}) {

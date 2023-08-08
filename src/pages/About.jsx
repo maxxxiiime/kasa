@@ -12,5 +12,5 @@ export default function About() {
       <h1>à propos</h1>
       <Footer />
     </div>
-  )
+  )   
 }
