@@ -4,13 +4,16 @@
     justify-content: space-between;
     align-items: center;
     // padding: 0 100px;
-    width:100%;
+    width:90%;
     max-width: 1240px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .kasa-logo{
     width: 210px;
+    @media only screen and (max-width:775px){
+        width: 145px;
+    }
 }
 .navigation-menu {
     ul{display: flex;
@@ -21,6 +24,10 @@
         text-decoration: none;
         font-size: 24px;
         margin: 30px;
+        @media only screen and (max-width:775px){
+            font-size: 12px;
+            margin: 6px ;
+        }
        
         &:hover,
         &.active,
