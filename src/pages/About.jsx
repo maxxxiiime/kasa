@@ -13,7 +13,7 @@ export default function About() {
     <Banner image={slide2} />
           <h1>à propos</h1>
 
-          <div className='about_collapse_content'>
+          <div className='collapse_content_about'>
     <Collapse  title=" Fiabilité"
               content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont
               régulièrement vérifiées par nos équipes." />

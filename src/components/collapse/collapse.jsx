@@ -6,6 +6,12 @@ export default function Collapse({ title, content }) {
 const [hide, show] = useState(false);
 
   const hideorShow = (event) => {
+                                                    //     const Button = styled.button`
+
+                                                    // &:hover {
+                                                    //   transform: scale(1.1);
+                                                    // }
+                                                    // `
     console.log("je collapse");
     show(!hide);
 };

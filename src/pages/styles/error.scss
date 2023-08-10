@@ -1,10 +1,20 @@
  
  .error{
     align-items: center;
-    margin: 33px auto;
+    margin: 13px auto;
     h1{
-        color:$red;
+        color:#FF6060;
         font-size: 288px;
         font-weight: 700;
+        margin: 100px auto;
+    }
+    p{
+        font-size: 36px;
+        margin:20px auto;
+    }
+    a{
+        margin:220px auto;
+        padding: 200px;
+        color:chartreuse;
     }
 }
