@@ -1,0 +1,46 @@
+@import '../../pages/styles/variables.scss';
+.collapse-bar{
+    width:70%;
+    margin:auto;
+    @media only screen and (max-width:775px){
+        width:90%;
+    }
+
+    &_title {
+        height: 52px;
+        background-color: $red;
+       border-radius: 5px;
+       position: relative;
+       margin: 25px auto;
+        h2{
+            position: absolute;
+            left:10px;
+            bottom:-5px;
+            text-align: left;
+            font-family: 'Monserrat', sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+
+                @media only screen and (max-width:775px){
+                    font-size: 13px;
+                    bottom:5px;
+                }
+        }
+        .to-toggle-collapse{
+            position: absolute;
+            right: 10px;
+            bottom: 15px;
+              transition: transform 0.3s ease; 
+              
+              &:active,
+              &:visited,
+              &:focus {
+                transform: rotate(180deg); 
+              }
+        }
+    }
+
+    &_text{
+        opacity: 0.5;
+    }
+}
