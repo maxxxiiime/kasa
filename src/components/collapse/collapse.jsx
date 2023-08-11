@@ -6,7 +6,7 @@ export default function Collapse({ title, content }) {
 const [hide, show] = useState(false);
 
   const hideorShow = (event) => {
-    // className={collapse__arrow ${isOpen ? "rotate" : "anti-rotate"}}
+
     console.log("je collapse");
     show(!hide);
 };

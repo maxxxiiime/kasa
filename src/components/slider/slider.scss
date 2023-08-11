@@ -1,0 +1,14 @@
+.slider{
+
+    height: 415px;
+    max-width: 1240px;
+    margin: 50px auto;
+    position: relative;
+&_img{
+    height: 415px;
+    width: 1240px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+}

@@ -20,6 +20,7 @@ export default function Home() {
               id={card.id}
               cover={card.cover}
               title={card.title} 
+              pictures={card.pictures}
               />
             )
           )

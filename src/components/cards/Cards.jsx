@@ -9,9 +9,7 @@ export default function Card({ id,cover,title }) {
         <div className='overlay-degrade'></div>  
         <img src={cover} alt={title} className='logement-card_img' />
         <h3>{title} </h3>
-      
-  
-      </div>
+          </div>
     </NavLink>
   )
 }
