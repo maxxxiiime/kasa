@@ -17,6 +17,7 @@ export default function Home() {
           {CardsDatas.map((card) => (
               <Card 
               key={card.id}
+              id={card.id}
               cover={card.cover}
               title={card.title} 
               />

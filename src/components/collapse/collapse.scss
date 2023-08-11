@@ -2,6 +2,7 @@
 .collapse-bar{
     width:70%;
     margin:auto;
+ 
     @media only screen and (max-width:775px){
         width:90%;
     }
@@ -30,17 +31,33 @@
             position: absolute;
             right: 10px;
             bottom: 15px;
-              transition: transform 0.3s ease; 
+          
               
-              &:active,
-              &:visited,
-              &:focus {
+         
+              .rotate {
                 transform: rotate(180deg); 
+                transition: 0.5s ease; 
               }
+        
         }
     }
 
-    &_text{
-        opacity: 0.5;
+   .icon-collapse{
+    transition: all 0.5s ease;
+    cursor: pointer;
+    
+   }
+   &_text {
+    overflow: hidden; /* L'élément est initialement caché */
+    max-height: 0px;
+opacity: 0;
+    transition: all 2s ease; /* Transition pour l'opacité */
+ 
+  
+    &.show-text {
+transition:all 1s ease;
+      max-height: 1000px;
+      opacity: 1;
     }
+  }
 }
