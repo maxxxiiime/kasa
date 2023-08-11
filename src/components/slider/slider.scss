@@ -11,4 +11,16 @@
     object-fit: cover;
 }
 
+.next-slide,
+.back-slide{
+        position: absolute;
+        top:40%;
+        filter: drop-shadow(0 1px 11px rgb(144, 144, 144));
+    }
+.next-slide{
+        right:10px;
+    }
+    .back-slide{
+        left: 10px;
+    }
 }

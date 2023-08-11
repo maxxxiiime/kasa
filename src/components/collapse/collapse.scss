@@ -1,6 +1,6 @@
 @import '../../pages/styles/variables.scss';
 .collapse-bar{
-    width:70%;
+    width:100%;
     margin:auto;
  
     @media only screen and (max-width:775px){
@@ -13,6 +13,7 @@
        border-radius: 5px;
        position: relative;
        margin: 25px auto;
+       max-width: 1024px;
         h2{
             position: absolute;
             left:10px;
@@ -33,7 +34,6 @@
             bottom: 15px;
           
               
-         
               .rotate {
                 transform: rotate(180deg); 
                 transition: 0.5s ease; 
@@ -50,13 +50,15 @@
    &_text {
     overflow: hidden; /* WTF */
     max-height: 0px;
-opacity: 0;
+    max-width: 1000px;
+    margin: -20px auto 0 auto;
+    opacity: 0;
     transition: all 2s ease; 
     background-color: rgb(34, 70, 110);
  
   
     &.show-text {
-transition:all 1s ease;
+        transition:all 1s ease;
       max-height: 1000px;
       opacity: 1;
     }
