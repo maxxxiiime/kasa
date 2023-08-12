@@ -1,0 +1,77 @@
+@import '../../pages/styles/variables.scss';
+
+
+.all-description{
+    max-width: 1240px;
+    margin:10px auto;
+    position: relative;
+// display:flex;
+// flex-wrap: wrap;
+._text-left{
+        text-align: left;
+        h2{
+            font-family:'montserrat';
+            font-size: 36px;
+            font-weight :500;
+            color: $red;
+            margin: 5px auto 0 auto;
+        }
+        p{
+            color: $red;
+            font-size: 18px;
+            margin:0 0 15px 0;
+        }
+    }
+}
+        .host {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            position: absolute;
+            top:10px;
+            right:0px;
+            .host-name{
+                text-align: right;
+                font-size: 18px;
+                max-width: 95px;
+                margin: 10px 10px auto auto;
+            }
+            img{
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            }
+        }
+.stars{
+    position: absolute;
+            top:80px;
+            right:0px;
+}
+.collapse-logement{
+width:100%;
+display: flex;
+justify-content: space-between;
+gap: 5%;
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+    align-items: flex-end;
+  
+    .tag {
+        display: flex;
+      background-color: #ff6060;
+      color: white;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: 10px;
+      font-size: 14px;
+      height: 25px;
+      font-weight: 500;
+      min-width: 115px;
+      line-height: 20px;
+    }
+  }

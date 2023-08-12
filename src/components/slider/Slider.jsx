@@ -17,7 +17,7 @@ export default function Slider({image}) {
       console.log(indexSlider);
     }
     //Numero de l'image dans le slider
-    // const indexSliderNum = indexSlider; 
+    const indexSliderNum = indexSlider +1; 
     const allImages = image.length; 
 
   return (
@@ -35,7 +35,7 @@ export default function Slider({image}) {
         </div>
         <div className='index-slider'>
           <p>
-            {indexSlider}/{allImages}
+            {indexSliderNum}/{allImages}
           </p>
         </div>
 

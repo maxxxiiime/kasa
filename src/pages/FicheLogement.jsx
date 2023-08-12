@@ -26,9 +26,15 @@ console.log(idLog)
             <h2>{logement.title}</h2>
             <p>{logement.location}</p>   
             </div>
-              <div className='tags'>
-                {logement.tags}
+
+              <div className="tags">
+                {logement.tags.map((tag, index) => (
+                  <div key={index} className="tag">
+                    {tag}
+                  </div>
+                ))}
               </div>
+
                     <div className='host'>
                         <div className="host-name">{logement.host.name}
                         </div>

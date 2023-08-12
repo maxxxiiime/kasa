@@ -1,7 +1,7 @@
 @import '../../pages/styles/variables.scss';
 .collapse-bar{
     width:100%;
-    margin:auto;
+    // margin:auto;
  
     @media only screen and (max-width:775px){
         width:90%;
@@ -22,6 +22,7 @@
             font-family: 'Monserrat', sans-serif;
             font-weight: 500;
             font-size: 24px;
+            color: white;
 
                 @media only screen and (max-width:775px){
                     font-size: 13px;
@@ -38,7 +39,6 @@
                 transform: rotate(180deg); 
                 transition: 0.5s ease; 
               }
-        
         }
     }
 
@@ -54,7 +54,8 @@
     margin: -20px auto 0 auto;
     opacity: 0;
     transition: all 2s ease; 
-    background-color: rgb(34, 70, 110);
+    background-color: rgb(235, 235, 235);
+    
  
   
     &.show-text {
