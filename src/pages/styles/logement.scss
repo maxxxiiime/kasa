@@ -2,6 +2,7 @@
 
 
 .all-description{
+    width: 90%;
     max-width: 1240px;
     margin:10px auto;
     position: relative;
@@ -15,11 +16,17 @@
             font-weight :500;
             color: $red;
             margin: 5px auto 0 auto;
+            @media only screen and (max-width:775px){
+                font-size: 18px;
+            }
         }
         p{
             color: $red;
             font-size: 18px;
             margin:0 0 15px 0;
+            @media only screen and (max-width:775px){
+                font-size: 14px;
+            }
         }
     }
 }
@@ -50,8 +57,12 @@
 .collapse-logement{
 width:100%;
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 gap: 5%;
+@media only screen and (max-width:775px){
+    display: column;
+    flex-wrap: wrap;
+}
 }
 
 .tags{
@@ -73,5 +84,9 @@ gap: 5%;
       font-weight: 500;
       min-width: 115px;
       line-height: 20px;
+      padding: 0 10px;
+      @media only screen and (max-width:775px){
+        font-size: 10px;
+    }
     }
   }

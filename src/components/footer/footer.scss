@@ -5,7 +5,19 @@
     justify-content: center;
     align-items: center;
     background-color: black;
+    margin-top: 70px;
   margin-bottom: 0;
+
+  padding-bottom: 44px;
+
+        // @media only screen and (max-width:775px){
+        //     padding: 10% 0;
+        // margin: 20px auto 0 auto;
+        // }
+//   position: absolute;
+//   bottom: 0;
+
+                    //   flex-grow: 1;
 .kasa-logo-white{
     margin:30px auto 10px auto; 
 }
@@ -15,6 +27,8 @@
         font-size: 24px;
         font-weight: 500;
         margin:30px auto 20px auto;
+         
+        text-align: center;
           
         @media only screen and (max-width:775px){
             width: 130px;

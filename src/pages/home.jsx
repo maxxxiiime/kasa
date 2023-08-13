@@ -12,20 +12,21 @@ export default function Home() {
     <div>
 
         <Header  />
+      
         <Banner image={slide1} text="Chez vous, partout et ailleurs" />
-        <div className='cards_container'>
-          {CardsDatas.map((card) => (
-              <Card 
-              key={card.id}
-              id={card.id}
-              cover={card.cover}
-              title={card.title} 
-              pictures={card.pictures}
-              />
+          <div className='cards_container'>
+            {CardsDatas.map((card) => (
+                <Card 
+                key={card.id}
+                id={card.id}
+                cover={card.cover}
+                title={card.title} 
+                pictures={card.pictures}
+                />
+              )
             )
-          )
-          }
-        </div>
+            }
+          </div>
         <Footer />
     </div>
   );
