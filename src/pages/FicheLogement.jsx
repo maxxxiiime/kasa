@@ -27,7 +27,7 @@ console.log(idLog)
             <h2>{logement.title}</h2>
             <p>{logement.location}</p>   
             </div>
-
+<div className='tags-n-rating'>
               <div className="tags">
                 {logement.tags.map((tag, index) => (
                   <div key={index} className="tag">
@@ -36,18 +36,29 @@ console.log(idLog)
                 ))}
               </div>
 
+<Rating ratingValue={logement.rating} />
+</div>
                     <div className='host'>
                         <div className="host-name">{logement.host.name}
                         </div>
                         <img src = {logement.host.picture} alt = {logement.host.name} />
                     </div>
-                <div className='stars'>{logement.rating}
-                <Rating />
+                
+                
 
-                </div>
+              
                 <div className='collapse-logement'>
                 <Collapse  title=" Description" content= {logement.description} className='description-collapse' />
-                <Collapse  title=" Équipements" content= {logement.equipments}  />
+                <Collapse  title=" Équipements" content=  {
+                            <ul>
+                                {logement.equipments.map((equipment, index) => (
+                                    <li key={index}>
+                                        {equipment}
+                                    </li>
+                                ))}
+                            </ul>
+                        }
+              />
                 </div>
           </div>
          <Footer />

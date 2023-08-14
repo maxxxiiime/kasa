@@ -24,11 +24,11 @@ const [hide, show] = useState(false);
 
           </div>
         </div>
-      {hide&& (
-      <div className={`collapse-bar_text ${hide ? "show-text" : ""}`}>
-        <p> {content}</p>
+      
+      <div className={`collapse-bar_text ${hide ? "show-text" : "hidden"}`}>
+        {content}
       </div>
-      )}
+      
     </div>
   )
 }

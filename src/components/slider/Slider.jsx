@@ -22,23 +22,34 @@ export default function Slider({image}) {
 
   return (
     <div className='slider'>
-        <img src={image[indexSlider]} alt='slider_img' className='slider_img' />
-     
+       
+       {allImages > 1 && ( 
         <div className='nav-slide'>
-              <img src={nextArrow} alt='next slide' className="next-slide"
-                onClick={nextSlide} 
+              <img src={nextArrow} 
+              alt='next slide' 
+              className="next-slide"
+              onClick={nextSlide} 
               /> 
             
-              <img src={backArrow} alt='back slide' className="back-slide"
-                onClick={backSlide} 
+              <img src={backArrow} 
+              alt='back slide' 
+              className="back-slide"
+              onClick={backSlide} 
               /> 
         </div>
-        <div className='index-slider'>
-          <p>
-            {indexSliderNum}/{allImages}
-          </p>
-        </div>
 
+       )}
+        <img src={image[indexSlider]} 
+        alt='slider_img' 
+        className='slider_img' />
+
+      {allImages > 1 && (
+          <div className='index-slider'>
+            <p>
+              {indexSliderNum}/{allImages}
+            </p>
+          </div>
+        )}
     </div>
   )
 }

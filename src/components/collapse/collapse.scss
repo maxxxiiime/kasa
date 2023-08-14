@@ -1,7 +1,8 @@
 @import '../../pages/styles/variables.scss';
 .collapse-bar{
-    width:100%;
-    // margin:auto;
+    width:90%;
+    max-width: 1240px;
+    margin:0 auto;
  
     @media only screen and (max-width:775px){
         width:90%;
@@ -15,6 +16,7 @@
        position: relative;
        margin: 25px auto;
        max-width: 1024px;
+       z-index: 2;
         h2{
             position: absolute;
             left:10px;
@@ -49,19 +51,24 @@
     
    }
    &_text {
+    color: $red;
     overflow: hidden; /* WTF */
-    max-height: 0px;
+    height: 0px;
     max-width: 1000px;
-    margin: -20px auto 0 auto;
+    margin: -25px auto 0 auto;
     opacity: 0;
-    transition: all 2s ease; 
+    transition: all 0.4s ease; 
+    transform: translateY(-20px);
     background-color: rgb(235, 235, 235);
+    border-radius: 3px;
+    z-index: 1;
     
  
-  
     &.show-text {
-        transition:all 1s ease;
-      max-height: 1000px;
+     
+      padding: 10px;
+      transform: translateY(0px);
+      height: auto;
       opacity: 1;
     }
   }
