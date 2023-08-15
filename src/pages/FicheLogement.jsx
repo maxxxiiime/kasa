@@ -3,7 +3,7 @@ import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 import CardsDatas from "../datas/logements.json";
 import Slider from "../components/slider/Slider";
-import Collapse from "../components/collapse/Collapse";
+import Collapse from "../components/Collapse/Collapse";
 import Rating from "../components/rating/Rating";
 import Error from "./Error";
 import "./styles/logement.scss";
