@@ -3,7 +3,7 @@ import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import Banner from '../components/banner/Banner';
 import slide2 from '../assets/slide2.jpg'
-import Collapse from '../components/collapse/Collapse';
+import Collapse from '../components/Collapse/Collapse';
 import './styles/about.scss'
 <styles />
 

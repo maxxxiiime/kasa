@@ -6,6 +6,9 @@
   margin: 10px 20px;
   overflow: hidden;
   cursor: pointer;
+  @media only screen and (max-width: 355px) {
+    margin: 10px auto;
+  }
   &_img {
     object-fit: cover;
     width: 340px;
@@ -18,7 +21,10 @@
       width: 335px;
       height: 255px;
     }
-
+    @media only screen and (max-width: 355px) {
+      width: 310px;
+      height: 245px;
+    }
     &:hover {
       transform: scale(1.1);
     }
