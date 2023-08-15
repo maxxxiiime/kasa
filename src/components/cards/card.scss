@@ -1,54 +1,53 @@
-@import '../../pages/styles/variables.scss';
+@import "../../pages/styles/variables.scss";
 
-.logement-card{
+.logement-card {
   position: relative;
+  border-radius: 10px;
+  margin: 10px 20px;
+  overflow: hidden;
+  cursor: pointer;
+  &_img {
+    object-fit: cover;
+    width: 340px;
+    height: 340px;
     border-radius: 10px;
-    margin: 10px 20px;
-    overflow: hidden;
-   cursor: pointer;
-    &_img{
-        object-fit: cover;
-        width: 340px;
-        height: 340px;
-        border-radius: 10px;
-        z-index: 0;
-        transition: transform 0.4s ease-in-out;
+    z-index: 0;
+    transition: transform 0.4s ease-in-out;
 
-        @media only screen and (max-width:775px){
-            width: 335px;
-            height: 255px;
-        }
-
-        &:hover{
-            transform: scale(1.1);
-        }
+    @media only screen and (max-width: 775px) {
+      width: 335px;
+      height: 255px;
     }
-    h3{
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  h3 {
     position: absolute;
     top: 268px;
-   left: 20px;
-   color: $white;
-   width:250px;
-   text-align: left;
-   font-family: 'Monserrat', sans-serif;
-   font-weight: 500;
-   font-size: 18px;
-   z-index: 2;
+    left: 20px;
+    color: $white;
+    width: 250px;
+    text-align: left;
+    font-family: "Monserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    z-index: 2;
 
-        @media only screen and (max-width:775px){
-            top:180px;
-            width:200px;
-        }
+    @media only screen and (max-width: 775px) {
+      top: 180px;
+      width: 220px;
     }
-    .overlay-degrade{
+  }
+  .overlay-degrade {
     position: absolute;
     bottom: 1px;
     left: 0;
-    z-index: 1; 
+    z-index: 1;
     width: 100%;
     height: 30%;
     background: $degrade;
-    border-radius: 10px;  
-          
-    }
+    border-radius: 10px;
+  }
 }

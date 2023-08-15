@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import logo from '../../assets/kasa-logo.svg';
 import './header.scss'
 import { NavLink } from 'react-router-dom'
 
+
 function Header() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
     // const title = 'kasa'
     return (
         <div className='nav-header'>
