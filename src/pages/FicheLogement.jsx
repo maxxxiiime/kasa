@@ -15,9 +15,9 @@ export default function FicheLogement() {
   const logement = CardsDatas.filter((card) => {
     return idLog === card.id;
   })[0];
-    console.log(logement);
-    console.log(idLog);
-  
+  console.log(logement);
+  console.log(idLog);
+
   if (!logement) {
     return <Error />;
   }
@@ -52,15 +52,15 @@ export default function FicheLogement() {
             content={logement.description}
             className="description-collapse"
           />
-          
+
           <Collapse
             title=" Équipements"
             content={
-                <ul>
-                  {logement.equipments.map((equipment, index) => (
-                    <li key={index}>{equipment}</li>
-                  ))}
-                </ul>
+              <ul>
+                {logement.equipments.map((equipment, index) => (
+                  <li key={index}>{equipment}</li>
+                ))}
+              </ul>
             }
           />
         </div>

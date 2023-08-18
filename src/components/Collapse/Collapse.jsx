@@ -6,7 +6,6 @@ export default function Collapse({ title, content }) {
   const [hide, show] = useState(false);
 
   const hideorShow = (event) => {
-    console.log("je collapse");
     show(!hide);
   };
   return (
