@@ -6,11 +6,21 @@ import './rating.scss'
 export default function rating(props) {
   const stars = [];
   const ratingValue = props.ratingValue;
-  console.log(ratingValue);
+  // console.log(ratingValue);
 
   for (let i = 0; i < 5; i++) {
-    if (i < ratingValue) stars.push(<img src={starFull} alt="React Logo" />);
-    else stars.push(<img src={starGrey} alt="React Logo" />);
+    if (i < ratingValue) 
+    stars.push(
+    <img src={starFull} 
+    alt="Stars rating full" 
+    key={i}
+    />);
+    else 
+    stars.push(
+    <img src={starGrey} 
+    alt="Stars rating grey" 
+    key={i}
+    />);
   }
 
   return(
