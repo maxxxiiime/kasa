@@ -10,8 +10,9 @@ function Header() {
 
   return (
     <div className="nav-header">
+      <NavLink to={"/"}>
       <img src={logo} alt="kasa logo" className="kasa-logo" />
-
+      </NavLink> 
       <div className="navigation-menu">
         <nav>
           <ul>
